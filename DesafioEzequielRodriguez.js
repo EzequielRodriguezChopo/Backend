@@ -29,13 +29,13 @@ class ProductManager {
       };
       const validationFieldResult = this.validationOfField(product); //Valido que no falte campos
       if (validationFieldResult) {
-         console.log("Falta un campo");
+         console.log("Falta un campo")
          return;
       }
       const validationOfCode = this.validationOfCode(product.code);
       if (validationOfCode) {
          // Valido el codigo, que no se repita
-         console.log("Codigo repetido");
+         console.log("Codigo repetido!");
          return;
       }
       const newId = this.products.length + 1;
